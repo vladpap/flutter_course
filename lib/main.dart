@@ -30,9 +30,18 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text("Learn flutter"),
-              ElevatedButton(onPressed: (){}, child: Text("Ok")),
-              const FlutterLogo(size: 50.0),
+              Image.asset(
+                "assets/images/roll.png",
+                width: 250,
+              ),
+              const Text(
+                "Вкусные роллы",
+                style: TextStyle(fontSize: 24.0),
+                ),
+              ElevatedButton(onPressed: (){
+                print ("Вы купили роллы. Спасибо за заказ!");
+              }, 
+              child: Text("Купить")),
             ],
           ),
         ),
