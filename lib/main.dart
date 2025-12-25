@@ -32,7 +32,18 @@ class HomeWidget extends StatelessWidget {
         title: const Text("UI Column Row"),
       ),
       body: Center(
-        child: RollCard() // 👉 Передаём виджет с карточкой
+        child: Container(
+          decoration: BoxDecoration(
+            color: Color.fromARGB(139, 33, 149, 246)
+          ),
+          child: Row(
+            children: [
+              RollCard(),
+              RollCard(),
+              RollCard(),
+            ],
+          ),
+        ), // 👉 Передаём виджет с карточкой
       ),
     );
   }
@@ -45,7 +56,7 @@ class RollCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 200, // 👉 Высота контейнера
-      padding: const EdgeInsets.all(16), // 👉 Внутренний отступ
+      padding: const EdgeInsets.all(8), // 👉 Внутренний отступ
 
       decoration: BoxDecoration(
         color: Colors.white, // 👉 Цвет фона белый
@@ -63,7 +74,7 @@ class RollCard extends StatelessWidget {
         children: [
           Image.asset("assets/images/roll.png", width: 100),
           SizedBox(height: 10),
-          Text("Вкусные Роллы", style: TextStyle(fontSize: 14)),
+          Text("Вкусные Роллы", style: TextStyle(fontSize: 12)),
           SizedBox(height: 10),
           ElevatedButton(onPressed: () {}, child: Text("Купить")),
         ],
