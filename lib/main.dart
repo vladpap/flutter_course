@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cource/roll/home_widget.dart';
+import 'package:flutter_cource/widgets/text_widget.dart';
+import 'package:flutter_cource/widgets/icon_widget.dart';
+import 'package:flutter_cource/widgets/color_widget.dart';
+import 'package:flutter_cource/widgets/rounded_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,11 +15,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Hello flutter",
+      debugShowCheckedModeBanner: false,
+      title: "Hello Flutter App",
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+      ),
       home: Scaffold(
-        body: Center(
-          child: const Text("Learn flutter"),
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text("Widget color"),
         ),
+        body: OvalImageExample(),
       ),
     );
   }
