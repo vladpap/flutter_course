@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cource/roll/home_widget.dart';
 import 'package:flutter_cource/widgets/text_widget.dart';
 import 'package:flutter_cource/widgets/icon_widget.dart';
+import 'package:flutter_cource/widgets/color_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,9 +22,9 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: const Text("Widget text"),
+          title: const Text("Widget color"),
         ),
-        body: IconExample(),
+        body: ColorExample2(),
       ),
     );
   }
