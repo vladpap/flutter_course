@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cource/roll/home_widget.dart';
 import 'package:flutter_cource/widgets/text_widget.dart';
+import 'package:flutter_cource/widgets/icon_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: const Text("Widget text"),
         ),
-        body: TextExample(),
+        body: IconExample(),
       ),
     );
   }
