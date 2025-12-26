@@ -3,6 +3,7 @@ import 'package:flutter_cource/roll/home_widget.dart';
 import 'package:flutter_cource/widgets/text_widget.dart';
 import 'package:flutter_cource/widgets/icon_widget.dart';
 import 'package:flutter_cource/widgets/color_widget.dart';
+import 'package:flutter_cource/widgets/rounded_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: const Text("Widget color"),
         ),
-        body: ColorExample2(),
+        body: OvalImageExample(),
       ),
     );
   }
