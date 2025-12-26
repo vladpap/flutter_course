@@ -33,13 +33,17 @@ class HomeWidget extends StatelessWidget {
       ),
       body: Center(
         child: Container(
+          height: 250,
           decoration: BoxDecoration(
             color: Color.fromARGB(139, 33, 149, 246)
           ),
           child: Row(
+            //mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               RollCard(),
-              RollCard(),
+              RollCard(height: 250),
               RollCard(),
             ],
           ),
@@ -50,12 +54,13 @@ class HomeWidget extends StatelessWidget {
 }
 
 class RollCard extends StatelessWidget {
-  const RollCard({super.key});
+  final double height;
+  const RollCard({super.key, this.height = 200});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200, // 👉 Высота контейнера
+      height: height, // 👉 Высота контейнера
       padding: const EdgeInsets.all(8), // 👉 Внутренний отступ
 
       decoration: BoxDecoration(
