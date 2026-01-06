@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cource/practical/practical_1.dart';
+import 'package:flutter_cource/practical/practical_2.dart';
 
 
 void main() {
@@ -17,7 +18,7 @@ class Page1 extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
-      home: PracticLayout1(),
+      home: PracticLayout2(),
     );
   }
 }
