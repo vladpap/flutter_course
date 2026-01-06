@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cource/roll/home_widget.dart';
-import 'package:flutter_cource/widgets/text_widget.dart';
-import 'package:flutter_cource/widgets/icon_widget.dart';
-import 'package:flutter_cource/widgets/color_widget.dart';
 import 'package:flutter_cource/widgets/rounded_widget.dart';
 
 void main() {
