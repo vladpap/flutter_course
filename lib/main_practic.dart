@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cource/practical/practical_1.dart';
+// import 'package:flutter_cource/practical/practical_1.dart';
 import 'package:flutter_cource/practical/practical_2.dart';
 
 
