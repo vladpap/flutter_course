@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_cource/practical/category.dart';
+import 'package:flutter_cource/practical/popular.dart';
+import 'package:flutter_cource/practical/action.dart';
+import 'package:flutter_cource/practical/navigation_bar.dart';
 
 
 class PracticLayout3 extends StatelessWidget {
@@ -26,16 +29,20 @@ class PracticLayout3 extends StatelessWidget {
             "Главная", style: TextStyle(fontSize: 36)),
         actions: [ShopCart(emptyCart: false)],
       ),
-      body: Container(
-        margin: EdgeInsets.symmetric(horizontal: 20),
-        child: Column(
-          children: [
-            CategoryChart(),
-            Text("Populyar"),
-            Text("Action"),
-          ],
+      body: SingleChildScrollView(
+        child: Container(
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            children: [
+              CategoryChart(),
+              PopulyarChart(),
+              ActionChart(),
+              SizedBox(height: 50),
+            ],
+          ),
         ),
       ),
+      bottomNavigationBar: MyNavigationBar(),
     );
   }
 }
