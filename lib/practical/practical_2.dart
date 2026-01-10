@@ -22,16 +22,16 @@ class PracticLayout2 extends StatelessWidget {
                   Expanded(child: Container(
                     padding: EdgeInsetsGeometry.all(20),
                     color: Colors.amber[300],
-                    child: Center(child: Card_practical(
-                      icon_card: Icons.view_column,
+                    child: Center(child: CardPractical(
+                      iconCard: Icons.view_column,
                       title: "Row()",
                       description: text1,
                     )))),
                   Expanded(child: Container(
                     padding: EdgeInsetsGeometry.all(20),
                     color: Colors.grey[300],
-                    child: Center(child: Card_practical(
-                      icon_card: Icons.view_agenda,
+                    child: Center(child: CardPractical(
+                      iconCard: Icons.view_agenda,
                       title: "Column()",
                       description: text2,
                     )))),
@@ -44,16 +44,16 @@ class PracticLayout2 extends StatelessWidget {
                     Expanded(child: Container(
                       padding: EdgeInsetsGeometry.all(20),
                       color: Colors.grey[300],
-                      child: Center(child: Card_practical(
-                        icon_card: Icons.text_fields,
+                      child: Center(child: CardPractical(
+                        iconCard: Icons.text_fields,
                         title: "Text()",
                         description: text3,
                       )))),
                     Expanded(child: Container(
                       padding: EdgeInsetsGeometry.all(20),
                       color: Colors.amber[300],
-                      child: Center(child: Card_practical(
-                        icon_card: Icons.open_in_full,
+                      child: Center(child: CardPractical(
+                        iconCard: Icons.open_in_full,
                         title: "Expanded()",
                         description: text4,
                       )))),
@@ -67,13 +67,13 @@ class PracticLayout2 extends StatelessWidget {
 }
 
 
-class Card_practical extends StatelessWidget {
-  final IconData icon_card;
+class CardPractical extends StatelessWidget {
+  final IconData iconCard;
   final String title;
   final String description;
 
-  const Card_practical({
-    required this.icon_card,
+  const CardPractical({
+    required this.iconCard,
     required this.title,
     required this.description,
     super.key
@@ -87,7 +87,7 @@ class Card_practical extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(icon_card), //Icons.view_column),
+            Icon(iconCard), //Icons.view_column),
             SizedBox(width: 10),
             Text(title), //" Row()")
           ],
