@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cource/stateful_widgets/s3_button_widget.dart';
 import 'package:flutter_cource/stateful_widgets/s3_2_button_widget.dart';
 import 'package:flutter_cource/stateful_widgets/s3_3_button_widget.dart';
+import 'package:flutter_cource/stateful_widgets/s3_4_button_widget.dart';
 
 
 void main() {
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              GestureDetectorExample(),
+              InkWellExample(),
             ],
           ),
         ),

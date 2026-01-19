@@ -1,11 +1,25 @@
 import 'package:flutter/material.dart';
 
 
-class name extends StatelessWidget {
-  const name({super.key});
+class InkWellExample extends StatelessWidget {
+  const InkWellExample({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Material(
+        borderRadius: BorderRadius.circular(12),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(12),
+          //splashColor: Colors.red[300],
+          onTap: () { },
+          child: SizedBox(
+            width: 200,
+            height: 200,
+            child: Center(child: Text("InkWell")),
+          ),
+        ),
+      ),
+    );
   }
 }
