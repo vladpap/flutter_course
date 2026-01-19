@@ -21,7 +21,6 @@ class PracticLayout1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           centerTitle: true,
-          title: const Text(""),
         ),
         body: SingleChildScrollView(         
           child: SizedBox(
